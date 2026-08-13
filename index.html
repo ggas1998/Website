@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal research website" />
+  <title>Gabriele — Researcher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">Gabriele<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Research · Remote Sensing · Geospatial Analysis</p>
+        <h1>Understanding landscapes through data, maps and spatial analysis.</h1>
+        <p class="lead">I work on environmental and forest research, combining remote sensing, GIS and reproducible analysis to study spatial patterns and support evidence-based decisions.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#research">Explore research</a>
+          <a class="button ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Research profile summary">
+        <div class="stat"><strong>GIS</strong><span>Spatial analysis</span></div>
+        <div class="stat"><strong>RS</strong><span>Remote sensing</span></div>
+        <div class="stat"><strong>R</strong><span>Reproducible workflows</span></div>
+        <div class="stat"><strong>Maps</strong><span>Cartographic outputs</span></div>
+      </aside>
+    </section>
+
+    <section id="research" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Research</p>
+        <h2>Current themes</h2>
+      </div>
+      <div class="cards three">
+        <article class="card">
+          <span class="card-index">01</span>
+          <h3>Forest monitoring</h3>
+          <p>Monitoring forest structure, change and disturbance using multi-source spatial data.</p>
+        </article>
+        <article class="card">
+          <span class="card-index">02</span>
+          <h3>Remote sensing</h3>
+          <p>Integrating satellite and airborne observations with field information and statistical models.</p>
+        </article>
+        <article class="card">
+          <span class="card-index">03</span>
+          <h3>Spatial decision support</h3>
+          <p>Developing transparent geospatial workflows that turn complex datasets into interpretable maps.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section split-section">
+      <div class="section-heading sticky-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+        <p>These are placeholders for your real projects, datasets and map-based outputs.</p>
+      </div>
+      <div class="project-list">
+        <article class="project">
+          <div class="project-meta">Project 01 · Mapping</div>
+          <h3>Landscape change atlas</h3>
+          <p>A map-first project combining temporal remote sensing layers to describe environmental change.</p>
+          <a href="#" aria-label="Open Landscape change atlas project">View project ↗</a>
+        </article>
+        <article class="project">
+          <div class="project-meta">Project 02 · Analysis</div>
+          <h3>Forest condition indicators</h3>
+          <p>A reproducible workflow for deriving spatial indicators and summarising them across management units.</p>
+          <a href="#" aria-label="Open Forest condition indicators project">View project ↗</a>
+        </article>
+        <article class="project">
+          <div class="project-meta">Project 03 · Web map</div>
+          <h3>Interactive geospatial explorer</h3>
+          <p>A future WebGIS area for browsing layers, study areas, statistics and map outputs.</p>
+          <a href="#" aria-label="Open Interactive geospatial explorer project">View project ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Publications</p>
+        <h2>Selected publications</h2>
+      </div>
+      <div class="publication-list">
+        <article class="publication">
+          <span class="year">2026</span>
+          <div>
+            <h3>Publication title placeholder</h3>
+            <p>Authors · Journal / Conference</p>
+          </div>
+          <a href="#">DOI ↗</a>
+        </article>
+        <article class="publication">
+          <span class="year">2025</span>
+          <div>
+            <h3>Publication title placeholder</h3>
+            <p>Authors · Journal / Conference</p>
+          </div>
+          <a href="#">DOI ↗</a>
+        </article>
+        <article class="publication">
+          <span class="year">2024</span>
+          <div>
+            <h3>Publication title placeholder</h3>
+            <p>Authors · Journal / Conference</p>
+          </div>
+          <a href="#">DOI ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <p class="eyebrow">Contact</p>
+      <h2>Interested in research, collaboration or geospatial work?</h2>
+      <p>Replace these links with your institutional email, ORCID, Google Scholar, GitHub or other profiles.</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.org">Email</a>
+        <a href="#">ORCID</a>
+        <a href="#">Google Scholar</a>
+        <a href="#">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Gabriele</span>
+    <span>Built with plain HTML, CSS and JavaScript.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
