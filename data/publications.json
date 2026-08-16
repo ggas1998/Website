@@ -1,0 +1,78 @@
+{
+  "orcid": "0009-0001-7762-0676",
+  "last_updated": "2026-08-16",
+  "publications": [
+    {
+      "title": "deadtrees.earth — An open-access and interactive database for centimeter-scale aerial imagery to uncover global tree mortality dynamics",
+      "year": 2026,
+      "type": "Journal article",
+      "journal": "Remote Sensing of Environment",
+      "volume": "332",
+      "pages": "115027",
+      "doi": "10.1016/j.rse.2025.115027",
+      "authors": [
+        "Mosig C.",
+        "Vajna-Jehle J.",
+        "Mahecha M.D.",
+        "Cheng Y.",
+        "Hartmann H.",
+        "Montero D.",
+        "Junttila S.",
+        "Horion S.",
+        "Schwenke M.B.",
+        "Koontz M.J.",
+        "et al.",
+        "Gabriele Giuseppe Antonio Satta"
+      ]
+    },
+    {
+      "title": "Detection and Modeling of Drought-induced Forest Dieback in Mediterranean Ecosystems",
+      "year": 2025,
+      "type": "Preprint",
+      "journal": "SSRN",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5761729",
+      "authors": [
+        "Gabriele Giuseppe Antonio Satta",
+        "Francesca Giannetti",
+        "Antonio Deidda",
+        "Andrea Brandano",
+        "Andrea Lentini",
+        "Giovanni Piras",
+        "Pino Angelo Ruiu",
+        "Salvatore Seddaiu",
+        "Bruno Scanu"
+      ]
+    },
+    {
+      "title": "Assessing the Role of Forest Grazing in Reducing Fire Severity: A Mitigation Strategy",
+      "year": 2024,
+      "type": "Journal article",
+      "journal": "Fire",
+      "volume": "7",
+      "issue": "11",
+      "pages": "409",
+      "doi": "10.3390/fire7110409",
+      "authors": [
+        "Raffaella Lovreglio",
+        "Julian Lovreglio",
+        "Gabriele Giuseppe Antonio Satta",
+        "Marco Mura",
+        "Antonio Pulina"
+      ]
+    },
+    {
+      "title": "Multiple Phytophthora species associated with declining wild olive trees in Sardinia, Italy",
+      "year": 2024,
+      "type": "Journal article",
+      "journal": "Plant Pathology",
+      "doi": "10.1111/ppa.14032",
+      "authors": [
+        "Antonio Deidda",
+        "Gabriele Giuseppe Antonio Satta",
+        "Andrea Brandano",
+        "Camilla Morittu",
+        "et al."
+      ]
+    }
+  ]
+}
