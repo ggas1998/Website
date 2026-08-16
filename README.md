@@ -1,18 +1,24 @@
 # Gabriele Giuseppe Antonio Satta, PhD — Academic Website
+Static bilingual website deployed with Vercel.
 
-Optimized static website for GitHub + Vercel.
+## Publications
+`data/publications.json` is generated from public ORCID record `0009-0001-7762-0676`. The workflow `.github/workflows/update-orcid.yml` runs daily and supports manual dispatch.
 
-## Automatic updates
-`data/publications.json` is refreshed daily from the public ORCID API by GitHub Actions.
+Local run:
+```bash
+python -m pip install -r requirements.txt
+python scripts/update_orcid.py
+```
 
-## LinkedIn
-The website includes a dedicated Updates section. Automatic LinkedIn synchronization should only be enabled through the official LinkedIn API when the required member-post permissions are available. No HTML scraping is used.
+## LinkedIn updates
+The website renders `data/updates.json`. Add an item with `source`, `date`, `title`, `text`, and the canonical LinkedIn `url`. Automatic member-post sync requires an approved LinkedIn application and OAuth permissions; credentials must remain server-side. HTML scraping is not used.
+
+## Profiles
+- ORCID: https://orcid.org/0009-0001-7762-0676
+- Google Scholar: https://scholar.google.it/citations?user=EMTdLEsAAAAJ&hl=it
+- LinkedIn: https://www.linkedin.com/in/gabriele-giuseppe-antonio-satta/
 
 ## Current information
 - Affiliation: Free University of Bozen-Bolzano
 - Based in: Bolzano, Italy
-- ORCID: 0009-0001-7762-0676
 - Email: gsatta@unibz.it
-
-## Deployment
-Upload all files to the root of the GitHub repository, preserving the folders. Vercel will deploy the repository automatically.

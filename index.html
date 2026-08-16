@@ -21,8 +21,8 @@
       <span>Forest Ecology · Remote Sensing · GIS</span>
     </div>
   </a>
-  <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
-  <nav class="site-nav">
+  <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="site-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="site-navigation" class="site-nav" aria-label="Primary navigation">
     <a href="#home" data-i18n="nav_home">Home</a>
     <a href="#research" data-i18n="nav_research">Research</a>
     <a href="#projects" data-i18n="nav_projects">Projects</a>
@@ -32,8 +32,8 @@
     <a href="#contact" data-i18n="nav_contact">Contact</a>
   </nav>
   <div class="header-tools">
-    <button id="lang-toggle" class="tool-button">IT</button>
-    <button id="theme-toggle" class="tool-button">☼</button>
+    <button id="lang-toggle" class="tool-button" type="button" aria-label="Switch to Italian">IT</button>
+    <button id="theme-toggle" class="tool-button" type="button" aria-label="Use dark theme" aria-pressed="false">☼</button>
   </div>
 </header>
 
@@ -50,15 +50,16 @@
       </div>
       <div class="hero-links">
         <a href="mailto:gsatta@unibz.it">gsatta@unibz.it</a>
-        <a href="https://orcid.org/0009-0001-7762-0676" target="_blank">ORCID</a>
-        <a href="https://www.linkedin.com/in/gabriele-giuseppe-antonio-satta/" target="_blank">LinkedIn</a>
+        <a href="https://orcid.org/0009-0001-7762-0676" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="https://www.linkedin.com/in/gabriele-giuseppe-antonio-satta/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.it/citations?user=EMTdLEsAAAAJ&amp;hl=it" target="_blank" rel="noopener noreferrer">Google Scholar</a>
       </div>
     </div>
     <aside class="hero-panel">
       <div class="panel-label" data-i18n="current_focus">Current focus</div>
-      <article><span>01</span><div><strong>Forest health</strong><p>Drought-induced dieback and tree mortality.</p></div></article>
-      <article><span>02</span><div><strong>Earth observation</strong><p>Sentinel-2, aerial imagery and spatial indicators.</p></div></article>
-      <article><span>03</span><div><strong>Spatial modelling</strong><p>GIS, machine learning and predictive mapping.</p></div></article>
+      <article><span>01</span><div><strong data-i18n="focus1t">Forest health</strong><p data-i18n="focus1p">Drought-induced dieback and tree mortality.</p></div></article>
+      <article><span>02</span><div><strong data-i18n="focus2t">Earth observation</strong><p data-i18n="focus2p">Sentinel-2, aerial imagery and spatial indicators.</p></div></article>
+      <article><span>03</span><div><strong data-i18n="focus3t">Spatial modelling</strong><p data-i18n="focus3p">GIS, machine learning and predictive mapping.</p></div></article>
     </aside>
   </div>
 </section>
@@ -70,9 +71,9 @@
       <p class="section-lead" data-i18n="research_lead">My research combines ecological understanding with geospatial technologies to detect, quantify and explain changes in Mediterranean forests.</p>
     </div>
     <div class="research-grid">
-      <article class="feature-card"><span>01</span><h3>Forest health & dieback</h3><p>Drought-related crown dieback, tree mortality and forest decline.</p></article>
-      <article class="feature-card"><span>02</span><h3>Remote sensing</h3><p>Satellite and aerial Earth observation for canopy condition and disturbance monitoring.</p></article>
-      <article class="feature-card"><span>03</span><h3>GIS & spatial modelling</h3><p>Geospatial analysis and machine-learning workflows focused on interpretable maps.</p></article>
+      <article class="feature-card"><span>01</span><h3 data-i18n="rc1t">Forest health &amp; dieback</h3><p data-i18n="rc1p">Drought-related crown dieback, tree mortality and forest decline.</p></article>
+      <article class="feature-card"><span>02</span><h3 data-i18n="rc2t">Remote sensing</h3><p data-i18n="rc2p">Satellite and aerial Earth observation for canopy condition and disturbance monitoring.</p></article>
+      <article class="feature-card"><span>03</span><h3 data-i18n="rc3t">GIS &amp; spatial modelling</h3><p data-i18n="rc3p">Geospatial analysis and machine-learning workflows focused on interpretable maps.</p></article>
     </div>
   </div>
 </section>
@@ -82,9 +83,9 @@
     <p class="eyebrow" data-i18n="projects_eyebrow">Projects & themes</p>
     <h2 data-i18n="projects_title">Selected research directions</h2>
     <div class="project-grid">
-      <article class="project-card project-green"><small>2022–2026 · PhD research</small><h3>Monitoring Mediterranean oak health through remote sensing</h3><p>Integration of remote sensing, field observations and forest-health indicators.</p></article>
-      <article class="project-card project-blue"><small>2025–2026 · Forest dieback</small><h3>Drought-induced forest dieback</h3><p>Detection, mapping and modelling with Sentinel-2 and machine learning.</p></article>
-      <article class="project-card project-earth"><small>2024 · Fire ecology</small><h3>Forest grazing & fire severity</h3><p>Assessment of prescribed forest grazing as a wildfire mitigation strategy.</p></article>
+      <article class="project-card project-green"><small data-i18n="p1m">2022–2026 · PhD research</small><h3 data-i18n="p1t">Monitoring Mediterranean oak health through remote sensing</h3><p data-i18n="p1p">Integration of remote sensing, field observations and forest-health indicators.</p></article>
+      <article class="project-card project-blue"><small data-i18n="p2m">2025–2026 · Forest dieback</small><h3 data-i18n="p2t">Drought-induced forest dieback</h3><p data-i18n="p2p">Detection, mapping and modelling with Sentinel-2 and machine learning.</p></article>
+      <article class="project-card project-earth"><small data-i18n="p3m">2024 · Fire ecology</small><h3 data-i18n="p3t">Forest grazing &amp; fire severity</h3><p data-i18n="p3p">Assessment of prescribed forest grazing as a wildfire mitigation strategy.</p></article>
     </div>
   </div>
 </section>
@@ -94,28 +95,21 @@
     <div class="section-heading">
       <div><p class="eyebrow" data-i18n="pub_eyebrow">Publications</p><h2 data-i18n="pub_title">Scientific outputs</h2></div>
       <div class="pub-tools">
-        <input id="pub-search" type="search" placeholder="Search publications">
-        <select id="pub-year"><option value="">All years</option></select>
-        <a class="text-link" href="https://orcid.org/0009-0001-7762-0676" target="_blank">ORCID ↗</a>
+        <label class="sr-only" for="pub-search" data-i18n="searchLabel">Search publications</label><input id="pub-search" type="search" placeholder="Search publications" data-i18n-placeholder="searchPlaceholder">
+        <label class="sr-only" for="pub-year" data-i18n="yearLabel">Filter by year</label><select id="pub-year"><option value="" data-i18n="allYears">All years</option></select>
+        <a class="text-link" href="https://orcid.org/0009-0001-7762-0676" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a class="text-link" href="https://scholar.google.it/citations?user=EMTdLEsAAAAJ&amp;hl=it" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
       </div>
     </div>
-    <p class="sync-status">Last synchronized: <span id="last-sync">—</span></p>
+    <p class="sync-status"><span data-i18n="lastSync">Last synchronized</span>: <span id="last-sync">—</span></p>
     <div id="publication-list" class="publication-list"><div class="loading-message">Loading publications…</div></div>
   </div>
 </section>
 
 <section id="updates" class="section section-soft">
   <div class="container">
-    <p class="eyebrow">Updates</p>
+    <p class="eyebrow" data-i18n="updatesEyebrow">Updates</p>
     <h2 data-i18n="updates_title">Latest research activity</h2>
-    <div id="updates-list" class="updates-grid">
-      <article class="update-card">
-        <span class="update-label">LinkedIn</span>
-        <h3 data-i18n="updates_placeholder_title">Professional updates</h3>
-        <p data-i18n="updates_placeholder_text">This feed is ready for official LinkedIn API synchronization when access is available.</p>
-        <a href="https://www.linkedin.com/in/gabriele-giuseppe-antonio-satta/" target="_blank">View LinkedIn ↗</a>
-      </article>
-    </div>
+    <div id="updates-list" class="updates-grid" aria-live="polite"><div class="loading-message" data-i18n="loadingUpdates">Loading updates…</div></div>
   </div>
 </section>
 
@@ -125,8 +119,8 @@
     <div>
       <p data-i18n="about_text">I am a forest ecologist and remote sensing researcher with a PhD in Agricultural Sciences. My work focuses on Mediterranean forest health, drought, climate change and geospatial analysis.</p>
       <div class="about-meta">
-        <div><span>Current affiliation</span><strong>Free University of Bozen-Bolzano</strong></div>
-        <div><span>Based in</span><strong>Bolzano, Italy</strong></div>
+        <div><span data-i18n="affiliation">Current affiliation</span><strong>Free University of Bozen-Bolzano</strong></div>
+        <div><span data-i18n="based">Based in</span><strong data-i18n="place">Bolzano, Italy</strong></div>
       </div>
     </div>
   </div>
@@ -135,11 +129,11 @@
 
 <footer id="contact" class="site-footer">
   <div class="container footer-grid">
-    <div><img src="assets/logo-light.svg" class="footer-logo" alt=""><h2>Gabriele Giuseppe Antonio Satta, PhD</h2><p>Forest ecologist · Remote sensing researcher</p></div>
+    <div><img src="assets/logo-light.svg" class="footer-logo" alt=""><h2>Gabriele Giuseppe Antonio Satta, PhD</h2><p data-i18n="footerRole">Forest ecologist · Remote sensing researcher</p></div>
     <div class="footer-links">
       <a href="mailto:gsatta@unibz.it">gsatta@unibz.it ↗</a>
-      <a href="https://www.linkedin.com/in/gabriele-giuseppe-antonio-satta/" target="_blank">LinkedIn ↗</a>
-      <a href="https://orcid.org/0009-0001-7762-0676" target="_blank">ORCID ↗</a>
+      <a href="https://www.linkedin.com/in/gabriele-giuseppe-antonio-satta/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a href="https://orcid.org/0009-0001-7762-0676" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="https://scholar.google.it/citations?user=EMTdLEsAAAAJ&amp;hl=it" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
     </div>
   </div>
   <div class="container footer-bottom">© <span id="year"></span> Gabriele Giuseppe Antonio Satta · Bolzano, Italy</div>

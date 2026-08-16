@@ -1,0 +1,33 @@
+name: Update ORCID publications
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: update-orcid-publications
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: site-refresh-bilingual
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/update_orcid.py
+        env:
+          ORCID_ID: "0009-0001-7762-0676"
+      - name: Commit changed data
+        run: |
+          if git diff --quiet -- data/publications.json; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/publications.json
+          git commit -m "chore: refresh ORCID publications"
+          git push origin HEAD:site-refresh-bilingual
