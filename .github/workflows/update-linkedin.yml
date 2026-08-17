@@ -1,0 +1,42 @@
+name: Update public LinkedIn posts
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - site-refresh-bilingual
+    paths:
+      - ".github/workflows/update-linkedin.yml"
+      - "scripts/update_linkedin.py"
+  schedule:
+    - cron: "41 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-public-linkedin-posts
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && github.ref_name || github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Discover indexed analytical posts
+        run: python scripts/update_linkedin.py
+        env:
+          LINKEDIN_ANALYSIS_HASHTAG: "#GGASResearch"
+      - name: Commit changed feed
+        run: |
+          if git diff --quiet -- data/updates.json; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/updates.json
+          git commit -m "chore: refresh public LinkedIn updates"
+          git push origin HEAD:${GITHUB_REF_NAME}

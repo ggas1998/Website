@@ -1,252 +1,156 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#123c2f" />
-  <meta name="description" content="Academic website of Gabriele Giuseppe Antonio Satta, PhD — Remote Sensing, Forest Ecology, GIS and Spatial Analysis." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#123c2f">
+  <meta name="description" content="Academic website of Gabriele Giuseppe Antonio Satta, PhD — Forest Ecology, Remote Sensing, GIS and Mediterranean forest health.">
+  <meta property="og:title" content="Gabriele Giuseppe Antonio Satta, PhD">
+  <meta property="og:description" content="Forest ecologist and remote sensing researcher based in Bolzano, Italy.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://arxiv.org/html/2605.19605v1/fig/qualitative_panel_final.png">
+  <meta name="color-scheme" content="light dark">
   <title>Gabriele Giuseppe Antonio Satta, PhD</title>
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Homepage">
-      <img src="assets/logo.svg" alt="" class="brand-mark" />
-      <div class="brand-copy">
-        <strong>Gabriele Giuseppe<br />Antonio Satta, PhD</strong>
-        <span>Remote Sensing · Forest Ecology · GIS</span>
+<header class="site-header">
+  <a class="brand" href="#home">
+    <img src="assets/logo.svg" class="brand-mark" alt="">
+    <div class="brand-copy">
+      <strong>Gabriele Giuseppe Antonio Satta, PhD</strong>
+      <span>Forest Ecology · Remote Sensing · GIS</span>
+    </div>
+  </a>
+  <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="site-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="site-navigation" class="site-nav" aria-label="Primary navigation">
+    <a href="#home" data-i18n="nav_home">Home</a>
+    <a href="#research" data-i18n="nav_research">Research</a>
+    <a href="#projects" data-i18n="nav_projects">Projects</a>
+    <a href="#publications" data-i18n="nav_publications">Publications</a>
+    <a href="#updates" data-i18n="nav_updates">Updates</a>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </nav>
+  <div class="header-tools">
+    <button id="lang-toggle" class="tool-button" type="button" aria-label="Switch to Italian">IT</button>
+    <button id="theme-toggle" class="tool-button" type="button" aria-label="Use dark theme" aria-pressed="false">☼</button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow" data-i18n="hero_eyebrow">Forest ecologist & remote sensing researcher</p>
+      <h1><span data-i18n="hero_title_1">Understanding forests</span><br><em data-i18n="hero_title_2">from field to space.</em></h1>
+      <p class="hero-text" data-i18n="hero_text">I study Mediterranean forest health and climate-driven ecosystem change by integrating Earth observation, field ecology, GIS and spatial modelling.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#research"><span data-i18n="hero_cta_1">Explore research</span> ↗</a>
+        <a class="btn btn-secondary" href="#publications"><span data-i18n="hero_cta_2">View publications</span> ↓</a>
       </div>
-    </a>
-
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span></span><span></span><span></span>
-      <span class="sr-only">Open menu</span>
-    </button>
-
-    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="#home" class="active">Home</a>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#maps">Maps</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">☼</button>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-grid container">
-        <div class="hero-copy">
-          <p class="eyebrow">Researcher in</p>
-          <h1>Remote Sensing<br />&amp; Forest Ecology</h1>
-          <p class="hero-text">
-            I study forest dynamics and ecosystem responses to climate change
-            using remote sensing, GIS and field data.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#research">Explore my research <span>→</span></a>
-            <a class="btn btn-ghost" href="#projects">View projects <span>▱</span></a>
-          </div>
-        </div>
-
-        <aside class="focus-panel" aria-label="Research areas">
-          <article>
-            <div class="focus-icon">◈</div>
-            <div><strong>Remote Sensing</strong><span>Satellite data &amp; analysis</span></div>
-          </article>
-          <article>
-            <div class="focus-icon">▲</div>
-            <div><strong>Forest Ecology</strong><span>Ecosystem structure &amp; dynamics</span></div>
-          </article>
-          <article>
-            <div class="focus-icon">⌁</div>
-            <div><strong>Spatial Analysis</strong><span>GIS &amp; geospatial modelling</span></div>
-          </article>
-          <article>
-            <div class="focus-icon">●</div>
-            <div><strong>Conservation</strong><span>Biodiversity &amp; climate change</span></div>
-          </article>
-        </aside>
-      </div>
-      <a href="#research" class="scroll-cue" aria-label="Scroll to research">⌄</a>
-    </section>
-
-    <section id="research" class="section research-section">
-      <div class="container research-layout">
-        <div class="section-intro">
-          <p class="eyebrow">Research focus</p>
-          <h2>Understanding forests<br />in a changing world</h2>
-          <p>
-            My work combines satellite remote sensing, field observations and
-            advanced spatial analysis to monitor forest ecosystems, assess their
-            condition and support conservation and sustainable management.
-          </p>
-          <a class="btn btn-light" href="#about">Learn more about my research <span>→</span></a>
-        </div>
-
-        <div class="research-cards">
-          <article class="research-card">
-            <div class="card-visual visual-earth"><span>◈</span></div>
-            <div class="card-body">
-              <h3>Earth Observation</h3>
-              <p>Using satellite data to monitor forest cover, disturbances and ecosystem change.</p>
-            </div>
-          </article>
-          <article class="research-card">
-            <div class="card-visual visual-forest"><span>▲</span></div>
-            <div class="card-body">
-              <h3>Field Ecology</h3>
-              <p>Collecting field data to understand forest structure, diversity and ecology.</p>
-            </div>
-          </article>
-          <article class="research-card">
-            <div class="card-visual visual-map"><span>⌁</span></div>
-            <div class="card-body">
-              <h3>Spatial Modeling</h3>
-              <p>Building spatial models to predict patterns and assess ecosystem services.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section projects-section">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Featured projects</p>
-            <h2>Recent projects</h2>
-          </div>
-          <a class="btn btn-light compact" href="#projects-grid">View all projects <span>⌘</span></a>
-        </div>
-
-        <div id="projects-grid" class="project-grid">
-          <article class="project-card">
-            <div class="project-image project-image-1"></div>
-            <div class="project-body">
-              <h3>Forest Disturbance Monitoring</h3>
-              <p>Monitoring forest disturbances in Mediterranean forests using Sentinel-2 time series.</p>
-              <div class="tags"><span>Remote Sensing</span><span>GIS</span></div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-image project-image-2"></div>
-            <div class="project-body">
-              <h3>Climate Impact on Forest Growth</h3>
-              <p>Assessing the impact of climate variability on forest productivity and growth.</p>
-              <div class="tags"><span>Forest Ecology</span><span>Climate Change</span></div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-image project-image-3"></div>
-            <div class="project-body">
-              <h3>Biodiversity and Conservation Planning</h3>
-              <p>Spatial prioritization for conservation based on biodiversity and habitat suitability.</p>
-              <div class="tags"><span>GIS</span><span>Conservation</span></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications" class="section publications-section">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Latest publications</p>
-            <h2>Selected publications</h2>
-          </div>
-          <a class="btn btn-light compact" href="https://orcid.org/0009-0001-7762-0676" target="_blank" rel="noreferrer">
-            View all publications <span>↗</span>
-          </a>
-        </div>
-
-        <article class="publication-card">
-          <div class="publication-icon">▤</div>
-          <div class="publication-content">
-            <h3>Selected publications will be listed here</h3>
-            <p>deadtrees.earth — An open-access and interactive database for centimeter-scale aerial imagery to uncover global tree mortality dynamics, 
-              Mosig, C.; Vajna-Jehle, J.; Mahecha, M.D.; Cheng, Y.; Hartmann, H.; Montero, D.; Junttila, S.; Horion, S.; Schwenke, M.B.; Koontz, M.J. et al..</p>
-            <div class="publication-meta">
-              <span>ORCID-linked research profile</span>
-              <span class="open-access">● Open profile</span>
-            </div>
-          </div>
-          <a class="btn btn-light compact" href="https://doi.org/10.1016/j.rse.2025.115027" target="_blank" rel="noreferrer">View ↗</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="maps" class="section maps-section">
-      <div class="container maps-layout">
-        <div>
-          <p class="eyebrow">Maps &amp; geospatial work</p>
-          <h2>Spatial outputs at the centre of the research</h2>
-          <p>
-            This section is ready for interactive maps, remote-sensing products,
-            study areas and WebGIS applications.
-          </p>
-        </div>
-        <div class="map-preview" aria-label="Stylised map preview">
-          <div class="map-grid"></div>
-          <span class="map-dot dot-1"></span>
-          <span class="map-dot dot-2"></span>
-          <span class="map-dot dot-3"></span>
-          <div class="map-label">Interactive maps coming soon</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section about-section">
-      <div class="container about-layout">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>Research across forests, satellites and spatial data</h2>
-        </div>
-        <p>
-          Gabriele Giuseppe Antonio Satta, PhD, works at the intersection of remote
-          sensing, forest ecology and geospatial analysis. This site is designed as
-          a living research portfolio and can be expanded with publications, maps,
-          datasets, projects, teaching activities and collaborations.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contact" class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo-light.svg" alt="" />
-        <div>
-          <strong>Gabriele Giuseppe<br />Antonio Satta, PhD</strong>
-          <span>Remote Sensing · Forest Ecology · GIS</span>
-        </div>
-      </div>
-
-      <div class="footer-contact">
-        <p class="footer-title">Get in touch</p>
-        <a href="mailto:gsatta@unibz.it">✉ &nbsp; gsatta@unibz.it</a>
-        <a href="https://www.linkedin.com/in/gabriele-giuseppe-antonio-satta/" target="_blank" rel="noreferrer">in &nbsp; LinkedIn ↗</a>
-        <a href="https://orcid.org/0009-0001-7762-0676" target="_blank" rel="noreferrer">iD &nbsp; ORCID 0009-0001-7762-0676 ↗</a>
-      </div>
-
-      <div class="footer-note">
-        Researcher in Remote Sensing and Forest Ecology. Focused on understanding
-        forest ecosystems through field observations, Earth observation and spatial analysis.
+      <div class="hero-links">
+        <a href="mailto:gsatta@unibz.it">gsatta@unibz.it</a>
+        <a href="https://orcid.org/0009-0001-7762-0676" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="https://www.linkedin.com/in/gabriele-giuseppe-antonio-satta/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.it/citations?user=EMTdLEsAAAAJ&amp;hl=it" target="_blank" rel="noopener noreferrer">Google Scholar</a>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> Gabriele Giuseppe Antonio Satta, PhD</span>
-    </div>
-  </footer>
+    <aside class="hero-panel hero-science">
+      <figure class="hero-figure">
+        <img src="https://arxiv.org/html/2605.19605v1/fig/qualitative_panel_final.png" alt="Aerial forest imagery paired with semantic masks for tree cover and mortality" loading="eager" fetchpriority="high">
+        <figcaption data-i18n="heroFigureCaption">Aerial imagery and semantic masks across forest biomes.</figcaption>
+      </figure>
+      <div class="science-stats" aria-label="deadtrees.earth dataset highlights">
+        <div><strong>2,176</strong><span data-i18n="sitesLabel">aerial sites</span></div>
+        <div><strong>385K</strong><span data-i18n="patchesLabel">image patches</span></div>
+        <div><strong>4</strong><span data-i18n="biomesLabel">biome groups</span></div>
+      </div>
+    </aside>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section id="research" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow" data-i18n="research_eyebrow">Research</p><h2 data-i18n="research_title">Forest ecosystems under environmental change</h2></div>
+      <p class="section-lead" data-i18n="research_lead">My research combines ecological understanding with geospatial technologies to detect, quantify and explain changes in Mediterranean forests.</p>
+    </div>
+    <div class="research-grid">
+      <article class="feature-card"><span>01</span><h3 data-i18n="rc1t">Forest health &amp; dieback</h3><p data-i18n="rc1p">Drought-related crown dieback, tree mortality and forest decline.</p></article>
+      <article class="feature-card"><span>02</span><h3 data-i18n="rc2t">Remote sensing</h3><p data-i18n="rc2p">Satellite and aerial Earth observation for canopy condition and disturbance monitoring.</p></article>
+      <article class="feature-card"><span>03</span><h3 data-i18n="rc3t">GIS &amp; spatial modelling</h3><p data-i18n="rc3p">Geospatial analysis and machine-learning workflows focused on interpretable maps.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section section-soft">
+  <div class="container">
+    <p class="eyebrow" data-i18n="projects_eyebrow">Projects & themes</p>
+    <h2 data-i18n="projects_title">Selected research directions</h2>
+    <div class="project-grid">
+      <article class="project-card project-featured">
+        <img class="project-media" src="https://arxiv.org/html/2605.19605v1/fig/spatial_stats.png" alt="Global distribution and ecological coverage of the deadtrees.earth aerial dataset" loading="lazy">
+        <div class="project-content"><small data-i18n="featuredMeta">2026 · Open data & machine learning</small><h3 data-i18n="featuredTitle">Global tree-mortality intelligence</h3><p data-i18n="featuredText">Open aerial imagery, ecological coverage and machine-learning-ready data for forest mortality monitoring.</p><a href="https://deadtrees.earth/" target="_blank" rel="noopener noreferrer" data-i18n="exploreDataset">Explore the dataset ↗</a></div>
+      </article>
+      <article class="project-card project-green"><small data-i18n="p1m">2022–2026 · PhD research</small><h3 data-i18n="p1t">Monitoring Mediterranean oak health through remote sensing</h3><p data-i18n="p1p">Integration of remote sensing, field observations and forest-health indicators.</p></article>
+      <article class="project-card project-blue"><small data-i18n="p2m">2025–2026 · Forest dieback</small><h3 data-i18n="p2t">Drought-induced forest dieback</h3><p data-i18n="p2p">Detection, mapping and modelling with Sentinel-2 and machine learning.</p></article>
+      <article class="project-card project-earth"><small data-i18n="p3m">2024 · Fire ecology</small><h3 data-i18n="p3t">Forest grazing &amp; fire severity</h3><p data-i18n="p3p">Assessment of prescribed forest grazing as a wildfire mitigation strategy.</p></article>
+    </div>
+    <p class="media-credit"><span data-i18n="mediaCredit">Scientific visuals:</span> Sharma et al. (2026), <em>deadtrees.earth-aerial</em>, <a href="https://arxiv.org/abs/2605.19605" target="_blank" rel="noopener noreferrer">CC BY 4.0 ↗</a></p>
+  </div>
+</section>
+
+<section id="publications" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow" data-i18n="pub_eyebrow">Publications</p><h2 data-i18n="pub_title">Scientific outputs</h2></div>
+      <div class="pub-tools">
+        <label class="sr-only" for="pub-search" data-i18n="searchLabel">Search publications</label><input id="pub-search" type="search" placeholder="Search publications" data-i18n-placeholder="searchPlaceholder">
+        <label class="sr-only" for="pub-year" data-i18n="yearLabel">Filter by year</label><select id="pub-year"><option value="" data-i18n="allYears">All years</option></select>
+        <a class="text-link" href="https://orcid.org/0009-0001-7762-0676" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a class="text-link" href="https://scholar.google.it/citations?user=EMTdLEsAAAAJ&amp;hl=it" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+      </div>
+    </div>
+    <p class="sync-status"><span data-i18n="lastSync">Last synchronized</span>: <span id="last-sync">—</span></p>
+    <div id="publication-list" class="publication-list"><div class="loading-message">Loading publications…</div></div>
+  </div>
+</section>
+
+<section id="updates" class="section section-soft">
+  <div class="container">
+    <p class="eyebrow" data-i18n="updatesEyebrow">Updates</p>
+    <h2 data-i18n="updates_title">Latest research activity</h2>
+    <div id="updates-list" class="updates-grid" aria-live="polite"><div class="loading-message" data-i18n="loadingUpdates">Loading updates…</div></div>
+  </div>
+</section>
+
+<section id="about" class="section about-section">
+  <div class="container about-grid">
+    <div><p class="eyebrow" data-i18n="about_eyebrow">About</p><h2 data-i18n="about_title">Ecology, Earth observation and maps.</h2></div>
+    <div>
+      <p data-i18n="about_text">I am a forest ecologist and remote sensing researcher with a PhD in Agricultural Sciences. My work focuses on Mediterranean forest health, drought, climate change and geospatial analysis.</p>
+      <div class="about-meta">
+        <div><span data-i18n="affiliation">Current affiliation</span><strong>Free University of Bozen-Bolzano</strong></div>
+        <div><span data-i18n="based">Based in</span><strong data-i18n="place">Bolzano, Italy</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact" class="site-footer">
+  <div class="container footer-grid">
+    <div><img src="assets/logo-light.svg" class="footer-logo" alt=""><h2>Gabriele Giuseppe Antonio Satta, PhD</h2><p data-i18n="footerRole">Forest ecologist · Remote sensing researcher</p></div>
+    <div class="footer-links">
+      <a href="mailto:gsatta@unibz.it">gsatta@unibz.it ↗</a>
+      <a href="https://www.linkedin.com/in/gabriele-giuseppe-antonio-satta/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a href="https://orcid.org/0009-0001-7762-0676" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="https://scholar.google.it/citations?user=EMTdLEsAAAAJ&amp;hl=it" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">© <span id="year"></span> Gabriele Giuseppe Antonio Satta · Bolzano, Italy</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
