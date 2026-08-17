@@ -2,6 +2,12 @@ name: Update public LinkedIn posts
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - site-refresh-bilingual
+    paths:
+      - ".github/workflows/update-linkedin.yml"
+      - "scripts/update_linkedin.py"
   schedule:
     - cron: "41 */6 * * *"
 
