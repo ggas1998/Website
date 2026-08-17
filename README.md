@@ -11,7 +11,9 @@ python scripts/update_orcid.py
 ```
 
 ## LinkedIn updates
-The website renders `data/updates.json`. Add an item with `source`, `date`, `title`, `text`, and the canonical LinkedIn `url`. Automatic member-post sync requires an approved LinkedIn application and OAuth permissions; credentials must remain server-side. HTML scraping is not used.
+The website renders `data/updates.json`. `.github/workflows/update-linkedin.yml` checks public search results every six hours and keeps the two newest analytical LinkedIn posts. It reads only publicly indexed results, uses no account credentials, and preserves the last valid feed when discovery is unavailable. Posts containing `#GGASResearch` are always considered analytical; a research-keyword filter also supports existing posts without the hashtag.
+
+Scheduled workflows run from GitHub's default branch. Before merge, use **Actions → Update public LinkedIn posts → Run workflow** on `site-refresh-bilingual` to test the branch version.
 
 ## Profiles
 - ORCID: https://orcid.org/0009-0001-7762-0676
