@@ -1,6 +1,6 @@
 {
   "orcid": "0009-0001-7762-0676",
-  "last_updated": "2026-08-16",
+  "last_updated": "2026-08-17",
   "publications": [
     {
       "title": "deadtrees.earth — An open-access and interactive database for centimeter-scale aerial imagery to uncover global tree mortality dynamics",
@@ -23,6 +23,30 @@
         "Koontz M.J.",
         "et al.",
         "Gabriele Giuseppe Antonio Satta"
+      ]
+    },
+    {
+      "title": "Evaluating the reliability of the 1-meter resolution meta-estimated global canopy height map for estimating forest structural metrics in Alpine environment",
+      "year": 2026,
+      "type": "Journal article",
+      "journal": "Ecological Informatics",
+      "volume": "97",
+      "pages": "103950",
+      "doi": "10.1016/j.ecoinf.2026.103950",
+      "authors": [
+        "Michele Torresani",
+        "Vítězslav Moudrý",
+        "Christopher R. Hakkenberg",
+        "Vojtěch Barták",
+        "Duccio Rocchini",
+        "Stefano Puliti",
+        "Paweł Hawryło",
+        "Krzysztof Stereńczak",
+        "Alexander Cotrina-Sanchez",
+        "Gabriele Giuseppe Antonio Satta",
+        "Luca da Ros",
+        "Patrick Kacic",
+        "Roberto Tognetti"
       ]
     },
     {
