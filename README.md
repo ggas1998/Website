@@ -25,6 +25,3 @@ The workflow runs once when its script or configuration changes on `site-refresh
 - Based in: Bolzano, Italy
 - Email: gsatta@unibz.it
 
-## Scientific imagery
-
-The homepage uses two scientific visuals from Sharma et al. (2026), *deadtrees.earth-aerial: A Multi-Resolution Aerial Image Dataset for Tree Cover and Mortality Detection*. The paper and figures are distributed under CC BY 4.0 and are credited on the page. LinkedIn update cards also support optional `image` and `image_alt` fields in `data/updates.json`.
