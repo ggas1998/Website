@@ -1,6 +1,6 @@
 {
   "orcid": "0009-0001-7762-0676",
-  "last_updated": "2026-09-11",
+  "last_updated": "2026-09-12",
   "publications": [
     {
       "title": "deadtrees.earth — An open-access and interactive database for centimeter-scale aerial imagery to uncover global tree mortality dynamics",
@@ -87,6 +87,24 @@
         "Roberto Tognetti"
       ],
       "orcid_put_code": 221974423
+    },
+    {
+      "title": "Applying the IOTA2 Chain for Automated 10 m Crop Map Production in a Mediterranean Environment",
+      "year": 2026,
+      "type": "journal-article",
+      "journal": "Remote Sensing",
+      "doi": "10.3390/rs18183118",
+      "url": "https://doi.org/10.3390/rs18183118",
+      "authors": [
+        "Andrea Borgo",
+        "Vincent Thierion",
+        "Gabriele Giuseppe Antonio Satta",
+        "Antonio Trabucco",
+        "Flavio Lupia",
+        "Serena Marras",
+        "Marta Debolini"
+      ],
+      "orcid_put_code": 226421547
     },
     {
       "title": "The vulnerability of Mediterranean forests to extreme heat and drought events: the case of Holm oak (Quercus ilex L.) dieback in Italy",
